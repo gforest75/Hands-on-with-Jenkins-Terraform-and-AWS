@@ -11,7 +11,7 @@ pipelineJob("Deploy-React-App"){
         }
     }
     parameters {
-      stringParam("UNIQUE_ANIMAL_IDENTIFIER", defaultValue = "moust", description = "Your unique animal identifier for this playground!")
+      stringParam("UNIQUE_ANIMAL_IDENTIFIER", defaultValue = "mousti", description = "Your unique animal identifier for this playground!")
     }
     definition {
     cpsScm {
@@ -36,7 +36,7 @@ pipelineJob("Destroy-React-App"){
     }
     concurrentBuild(allowConcurrentBuild = false)
     parameters {
-      stringParam("UNIQUE_ANIMAL_IDENTIFIER", defaultValue = "moust", description = "Your unique animal identifier for this playground!")
+      stringParam("UNIQUE_ANIMAL_IDENTIFIER", defaultValue = "mousti", description = "Your unique animal identifier for this playground!")
     }
     definition {
     cpsScm {
